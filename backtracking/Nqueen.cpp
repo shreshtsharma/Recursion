@@ -42,6 +42,7 @@ void solve(int n, vector<string> &vec, int row, int col, vector<vector<string>> 
     {
         if (isSafe(n, row, i, vec))
         {
+
             vec[row][i] = 'Q';
             solve(n, vec, row + 1, i, res);
             vec[row][i] = '.';
